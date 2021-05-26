@@ -1,5 +1,5 @@
 <kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="test" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="com.myspace" includes="test">
+  <kbase name="test" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="com.myspace.testing" includes="test">
     <ksession name="test" type="stateless" default="true" clockType="realtime"/>
   </kbase>
 </kmodule>
