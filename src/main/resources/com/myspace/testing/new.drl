@@ -25,5 +25,5 @@ rule 'cpt 3'
 	when
 		medChart: MedicalChart(specialityType == 2)
 	then
-		medChart.setCptCode("1113");
+		medChart.setCptCode("Code New 1122");
 end
