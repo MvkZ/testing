@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RuleBaseHelper">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Mvk/Drools/RuleBaseHelper/out/artifacts/RuleBaseHelper_jar/RuleBaseHelper.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
