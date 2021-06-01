@@ -45,6 +45,14 @@
       <version>7.18.0.Final</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>com.buddi</groupId>
+      <artifactId>helper</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/src/main/resources/RuleBaseHelper.jar</systemPath>
+    </dependency>
+
   </dependencies>
   <build>
     <plugins>
