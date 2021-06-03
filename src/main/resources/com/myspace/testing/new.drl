@@ -1,5 +1,7 @@
 package com.myspace.testing;
 
+import com.myspace.testing.RuleBaseHelperJava;
+
 declare MedicalChart
     name : String
     specialityType : String
@@ -23,7 +25,14 @@ end
 
 rule 'cpt 3'
 	when
-		medChart: MedicalChart(specialityType == 2)
+		medChart: MedicalChart(RuleBaseHelperJava.stringCompareJava(specialityType,"hello"))
 	then
-		medChart.setCptCode("Code New 1122");
+		medChart.setCptCode("Hey Hello");
+end
+
+rule 'cpt 4'
+	when
+		medChart: MedicalChart(RuleBaseHelperJava.stringCompareJava(specialityType,"world"))
+	then
+		medChart.setCptCode("Hey World");
 end
