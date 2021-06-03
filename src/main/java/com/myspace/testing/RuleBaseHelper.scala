@@ -1,4 +1,4 @@
-package com.myspace.helper
+package com.myspace.testing
 
 object RuleBaseHelper {
   def validateCPT(cpt: Array[String], rules: String): Boolean = {
@@ -15,6 +15,6 @@ object RuleBaseHelper {
   }
 
   def main(args: Array[String]): Unit = {
-    print(stringCompare("ab","ab"))
+    print(stringCompare("ab", "ab"))
   }
 }
