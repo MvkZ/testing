@@ -1,0 +1,29 @@
+package com.myspace.testing;
+
+declare MedicalChart
+    name : String
+    specialityType : String
+    mobileNo : String
+    cptCode: String
+end
+
+rule 'cpt 1'
+	when
+		medChart: MedicalChart( mobileNo != null)
+	then
+		medChart.setCptCode("1111");
+end
+
+rule 'cpt 2'
+	when
+		medChart: MedicalChart(specialityType == 1)
+	then
+		medChart.setCptCode("1112");
+end
+
+rule 'cpt 3'
+	when
+		medChart: MedicalChart(specialityType == 2)
+	then
+		medChart.setCptCode("Code New 1122");
+end
